@@ -66,7 +66,7 @@ class SomethingToShow extends HTMLElement {
         this.attachShadow({ mode: 'open' }); 
         // Appendataan shadowRootiin klooni templatesta
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        // Luetaan index.html:ssä komponenttin kautta syötetyt atribuutit
+        // Luetaan index.html:ssä komponenttin kautta syötetyt attribuutit
         this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
         this.shadowRoot.querySelector('img').src = this.getAttribute('avatar');
   }
