@@ -62,7 +62,7 @@ class SomethingToShow extends HTMLElement {
 
         this.showInfo = true;
 
-        // Lisätään shadow DOM -puu sitä käyttävään elementtiin. hostiin + palauttaa viittauksen "shadow rootiin"
+        // Lisätään shadow DOM -puu sitä käyttävään elementtiin + palauttaa viittauksen "shadow rootiin"
         this.attachShadow({ mode: 'open' }); 
         // Appendataan shadowRootiin klooni templatesta
         this.shadowRoot.appendChild(template.content.cloneNode(true));
@@ -99,5 +99,5 @@ class SomethingToShow extends HTMLElement {
   }
 }
 
-// Lisätään luomamme elementti itse tehtyjen elementtien listalle antaen sille kutstumanimi ja kertoen, mitä luokkaa käytetään
+// Lisätään luomamme elementti itse tehtyjen elementtien listalle antaen sille kutstumanimi ja kertoen, mitä luokkaa käytetään. Tavallaan luodaan aiemmin mainittu host.
 window.customElements.define('something-to-show', SomethingToShow);
