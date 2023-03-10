@@ -1,37 +1,13 @@
 const template = document.createElement('template');
 template.innerHTML = `
-  <style>
-  .something-to-show {
-		font-family: 'Arial', sans-serif;
-		background: #f4f4f4;
-		width: 500px;
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-gap: 10px;
-		margin-bottom: 15px;
-		border-bottom: darkorchid 5px solid;
-	}
-
-	.something-to-show img {
-		width: 100%;
-	}
-
-	.something-to-show button {
-		cursor: pointer;
-		background: darkorchid;
-		color: #fff;
-		border: 0;
-		border-radius: 5px;
-		padding: 5px 10px;
-	}
-  </style>
+  <link rel="stylesheet" href="styles.css">
   <!-- Määritellään templaten runko -->
   <div class="something-to-show">
     <img />
     <div>
       <h3></h3>
       <div class="info">
-      <!-- Komponentin atribuuttien slot-placeholderit -->
+      <!-- Komponentin atribuuttien slot-placeholderit, johon tiedot latautuvat dynaamisesti -->
         <p><slot name="email" /></p>
         <p><slot name="phone" /></p>
       </div>

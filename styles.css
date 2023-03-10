@@ -1,0 +1,70 @@
+/* Frontpage */
+#numberarea {
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    text-align: left;
+    width: 480px;
+    background: rgb(108, 146, 222);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+.link {
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    bottom: 50;
+    text-align: left;
+    width: 480px;
+    background: rgb(108, 146, 222);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(173, 212, 155);
+}
+.letsmoveonit {
+    position: absolute;
+    top: 515px;
+}
+
+/* something-to-show */
+.something-to-show {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+    border-bottom: darkorchid 5px solid;
+}
+
+.something-to-show img {
+    width: 100%;
+}
+
+.something-to-show button {
+    cursor: pointer;
+    background: darkorchid;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* embedded-item */
+#repeater {
+    cursor: pointer;
+    background: green;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+.button-area {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 700fr 0fr;
+    margin-bottom: 15px;
+}

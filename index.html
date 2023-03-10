@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Testidokumentti</title>
 </head>
 <body>
+    <div class="letsmoveonit">
+        <a href="./imgs/csm_EN-diagram-shadow-dom_05e1ef04fd.png" target="_blank" class="link">Tätä klikkaamalla näet kaaviokuvan Shadow DOMista</a>
+    </div>
     <something-to-show name="Ei pöllömpi fronttiuudistaja" avatar="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2017/09/C60X5B-scaled-e1580221040192-920x752.jpg">
         <div slot="email">frontti@uudisraivaaja.fi</div>
         <div slot="phone">040 321 7654</div>
@@ -17,12 +21,13 @@
         <div slot="phone">040 123 4567</div>
     </something-to-show>
 
-    <div>
-        <img src="./imgs/csm_EN-diagram-shadow-dom_05e1ef04fd.png">
-    </div>
+    <master-list></master-list>
 
+    <div id="numberarea"></div>
+    
 
     <script src="./dommanipulation.js"></script>
+    <script src="./numberplay.js"></script>
 </body>
 </html>
 
